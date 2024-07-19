@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Odin Etch a Sketch</title>
+    <link rel="stylesheet" href="./styles.css">
+</head>
+
+<body>
+    <header>Etch a Sketch</header>
+    <section>
+        <div id="controlPanel">
+            <input type="Color" id="colorSelector">
+            <button id="ColorMode" value="Color">Color</button>
+            <button id="RainbowMode" value="Rainbow">Rainbow</button>
+            <button id="Eraser" value="Eraser">Eraser</button>
+            <button id="clear">Clear</button>
+            <div id="rangeDiv">
+                <p id="SizeDisplay">3 x 3</p>
+                <input type="range" id="gridSizeCtr" min="1" max="64" value="3" oninput="setSize()">
+            </div>
+        </div>
+        <div id="Sketch">
+            <div id="container"></div>
+        </div>
+    </section>
+    <footer>
+        &copy; 2024 Garv Modi <a href="https://github.com/GarvModi18" target="_blank"><img src="./github-mark-white.png" alt="github Profile"></a>
+    </footer>
+    <script src="./script.js"></script>
+</body>
+
+</html>

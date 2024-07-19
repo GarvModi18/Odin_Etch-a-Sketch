@@ -1,0 +1,91 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: serif;
+}
+
+body {
+    /* background-color: rgb(91, 222, 226); */
+    background-color: rgb(163, 205, 243);
+}
+
+header {
+    color: white;
+    background-color: rgba(0, 0, 0, 0.947);
+    text-align: center;
+    font-size: xxx-large;
+}
+
+section {
+    border-radius: 5px;
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-around;
+    width: 100%;
+    height: 600px;
+}
+
+#controlPanel {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-direction: column;
+    height: 100%;
+    width: 40%;
+    border-radius: 5px;
+}
+
+#Sketch {
+    display: grid;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    width: 60%;
+    border-radius: 5px;
+}
+
+button,
+input {
+    width: 100px;
+    height: 50px;
+    font-size: large;
+    border-radius: 5px;
+    background-color: rgb(255, 255, 255);
+    border: 2px solid rgb(0, 136, 255);
+    cursor: pointer;
+}
+
+p {
+    text-align: center;
+    font-size: x-large;
+}
+
+#container {
+    display: grid;
+    width: 500px;
+    height: 500px;
+    background-color: rgb(255, 255, 255);
+    grid-template-columns: 3;
+    grid-template-rows: 3;
+}
+
+footer {
+    display: flex;
+    background-color: black;
+    width: 100%;
+    height: 40px;
+    color: white;
+    align-items: center;
+    justify-content: center;
+    gap: 5px;
+}
+
+img {
+    width: 30px;
+    transition: transform .3s ease-in-out;
+}
+
+img:hover {
+    transform: rotate(360deg);
+}
